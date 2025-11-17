@@ -5,5 +5,7 @@ export default async function Page({
 }) {
   const { id } = await params;
 
+  console.log(id);
+
   return <div>post/{id} 입니다.</div>;
 }
