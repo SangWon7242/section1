@@ -1,5 +1,5 @@
-import ClientComponent from "./client-component";
-import ServerComponent from "./server-components";
+import ClientComponent from "../../components/client-component";
+import ServerComponent from "../../components/server-components";
 
 export default function Home() {
   return (

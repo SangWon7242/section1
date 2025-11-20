@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "리액트 학습 섹션1",
@@ -13,7 +14,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ko">
-      <body className="antialiased">{children}</body>
+      <body className="antialiased">
+        <Link href={"/"}>index</Link>
+        &nbsp;
+        <Link href={"/search"}>search</Link>
+        &nbsp;
+        <Link href={"/post/1"}>post/1</Link>
+        {children}
+      </body>
     </html>
   );
 }
